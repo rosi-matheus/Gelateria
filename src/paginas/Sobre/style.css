@@ -1,0 +1,90 @@
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.secao-banner-sobre {
+    height: 90vh;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('/public/assets/banner-sobre.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.texto-sobre {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.texto-sobre h1 {
+    color: #fff;
+    font-size: 100px;
+    text-shadow: 3px 5px 2px #474747;
+}
+
+.secao-textos-sobre div {
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secao-textos-sobre h2 {
+    font-size: 35px;
+    line-height: 26px;
+    align-items: center;
+}
+
+.secao-textos-sobre span {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.secao-textos-sobre p {
+    text-align: center;
+    line-height: 26px;
+    margin-bottom: 15px;
+}
+
+.secao-images-sobre div {
+    display: flex;
+}
+
+.secao-images-sobre img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .texto-sobre h1 {
+        font-size: 60px;
+    }
+    
+    .secao-images-sobre div {
+        flex-direction: column;
+    }
+
+    .secao-images-sobre img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 436px) {
+    .texto-sobre h1 {
+        font-size: 40px;
+    }
+}
+
